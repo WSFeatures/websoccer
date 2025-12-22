@@ -195,8 +195,8 @@ CREATE TABLE ws3_verein (
 
 CREATE TABLE ws3_spieler (
   id INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  vorname VARCHAR(30) NULL,
-  nachname VARCHAR(30) NULL,
+  vorname VARCHAR(30) NOT NULL,
+  nachname VARCHAR(30) NOT NULL,
   kunstname VARCHAR(30) NULL,
   geburtstag DATE NOT NULL,
   verein_id INT(10) NULL,
@@ -243,7 +243,8 @@ CREATE TABLE ws3_spieler (
   lending_matches TINYINT NOT NULL DEFAULT 0,
   lending_owner_id INT(10) NULL,
   age TINYINT(3) NULL,
-  status ENUM('1','0') NOT NULL DEFAULT '0'
+  status ENUM('1','0') NOT NULL DEFAULT '0',
+  UNIQUE KEY uniq_vorname_nachname (vorname, nachname)
 ) DEFAULT CHARSET=utf8, ENGINE=InnoDB;
 
 CREATE TABLE ws3_transfer_angebot (
