@@ -48,15 +48,15 @@
 							<td>
 								<small>
 									<p><strong>{{ i18n.getMessage("entity_player_w_staerke") }}</strong><br>
-									{% for strengthlevel in 1..5 %}
-										<i class="icon-star{% if (30 + strengthlevel * 10) > club.team_strength %}-empty{% endif %}"></i>
-									{% endfor %}</p>
-								
-									<p><strong>{{ i18n.getMessage("entity_club_finanz_budget") }}</strong><br>
-									{{ club.team_budget|number_format(0, ',', ' ') }} {{ env.getConfig("game_currency") }}</p>
-									
+										<i class="icon-star{% if 50 > club.team_strength %}-empty{% endif %}"></i>	
+										<i class="icon-star{% if 70 > club.team_strength %}-empty{% endif %}"></i>
+										<i class="icon-star{% if 74 > club.team_strength %}-empty{% endif %}"></i>
+										<i class="icon-star{% if 78 > club.team_strength %}-empty{% endif %}"></i>
+										<i class="icon-star{% if 82 > club.team_strength %}-empty{% endif %}"></i>
+									</p>
+															
 									<p><strong>{{ i18n.getMessage("entity_stadium") }}</strong><br>
-									{{ (club.stadium_p_steh + club.stadium_p_sitz + club.stadium_p_haupt_steh + club.stadium_p_haupt_sitz + club.stadium_p_vip)|number_format(0, ',', ' ') }}</p>
+									{{ (club.stadium_p_steh + club.stadium_p_sitz + club.stadium_p_haupt_steh + club.stadium_p_haupt_sitz + club.stadium_p_vip)|number_format(0, ',', '.') }}</p>
 								</small>
 							</td>
 							{% if env.getConfig("assign_team_automatically") %}
