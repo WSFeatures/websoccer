@@ -27,7 +27,7 @@ body {
         height: calc(100% - 60px);
         /* Negative indent footer by it's height */
         margin: 0px auto;
-        background: url(../../img/schedioartskin/players-bg.png) repeat-x center bottom;
+        background: url(../../img/schedioartskin/players-bg.avif) repeat-x center bottom;
 }
 
 #wrapper > .container:nth-child(2), #wrapper > .master-head:nth-child(2)  {
