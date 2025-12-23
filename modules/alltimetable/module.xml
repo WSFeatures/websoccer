@@ -13,7 +13,7 @@
             navitem="true"
             navweight="10"
             model="LeagueDetailsModel"
-            role="user,guest" 
+            role="user" 
             parentItem="leagues"/>
 
     </pages> 
@@ -27,7 +27,7 @@
             includepages="alltimetable"
             area="content_bottom"
             weight="2"
-            role="user,guest" />
+            role="user" />
         
     </blocks>    
 </module>
