@@ -105,7 +105,7 @@
 	            navitem="true"
 	            model="LeaguesListModel"
 	            navweight="0"
-	            role="user,guest"/>
+	            role="user"/>
 	        
    
         </page>
