@@ -161,7 +161,7 @@
             id="topstrikers"
             template="strikers"
             model="TopStrikersModel"
-            role="user,guest"
+            role="user"
             navitem="true"
             navweight="3"
             parentItem="leagues" />
@@ -170,7 +170,7 @@
             id="topscorers"
             template="scorers"
             model="TopScorersModel"
-            role="user,guest"
+            role="user"
             navitem="true"
             navweight="4"
             parentItem="leagues" />
@@ -185,7 +185,7 @@
             model="PlayerStatisticsModel"
             includepages="none"
             area="custom"
-            role="user,guest" />
+            role="user" />
         
     </blocks>
     
