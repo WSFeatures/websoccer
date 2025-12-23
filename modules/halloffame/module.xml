@@ -10,7 +10,7 @@
 	            parentItem="leagues"
 	            navitem="true"
 	            navweight="10"
-	            role="user,guest"/>	     
+	            role="user"/>	     
 
     </pages> 
     
